@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-div">
+        <div class="left-div">
+          <div class="group-one">
+            <label for="bill" class="group-title">Bill</label>
+            <input
+              type="number"
+              id="bill"
+              class="group-img"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="group-two">
+            <h3 class="group-title">Select Tip %</h3>
+            <div class="group-two__list-one">
+              <button class="tip-btn">5%</button>
+              <button class="tip-btn">10%</button>
+              <button class="tip-btn">15%</button>
+              <button class="tip-btn">25%</button>
+              <button class="tip-btn">50%</button>
+              <input
+                type="number"
+                id="custom-tip"
+                class="group-img"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <div class="group-one">
+            <label for="people" class="group-title">Number of People</label>
+            <input
+              type="number"
+              id="people"
+              class="group-img"
+              placeholder="0"
+            />
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-div">
+          <div class="right-section">
+            <div>
+              <p class="section-item">Tip Amount</p>
+              <p class="section-item small">/ person</p>
+            </div>
+            <p id="tip-amount" class="section-price">$0.00</p>
+          </div>
+
+          <div class="right-section">
+            <div>
+              <p class="section-item">Total</p>
+              <p class="section-item small">/ person</p>
+            </div>
+            <p id="total-amount" class="section-price">$0.00</p>
+          </div>
+
+          <button id="reset" class="main-btn-reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
